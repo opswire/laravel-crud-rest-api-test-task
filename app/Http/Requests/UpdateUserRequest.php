@@ -20,7 +20,6 @@ class UpdateUserRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'email'    => 'required|email:rfc,dns',
             'name'     => 'required|string',
             'age'      => 'required|integer|min:1|max:150',
             'sex'      => 'required|string',
